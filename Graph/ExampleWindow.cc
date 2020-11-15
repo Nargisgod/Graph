@@ -227,86 +227,91 @@ void ExampleWindow::do_logic()
 	//	_bee_x = -256;
 	//_bee_y += 8 * sin(_bee_phase);
 	//_bee_phase += 0.1;
-
-	_car_x += 3;
-		if (_car_x >= width())
-			_car_x = -256;
-	_sun_x -= 0.5;
+	_sun_x -= 1;
 		if (_sun_x <= 0)
 			_sun_x = 1900;
-	_mounts_x -= 0.5;
+
+	_mounts_x -= 2;
 		if (_mounts_x <= -width())
 			_mounts_x = 1900;
-	_mounts_x1 -= 0.5;
+	_mounts_x1 -= 2;
 		if (_mounts_x1 <= -width())
 			_mounts_x1 = 1900;
-	_cloud1_x -= 0.8;
+
+	_cloud1_x -= 3;
 		if (_cloud1_x <= -width())
 			_cloud1_x = 1900;
-	_cloud11_x -= 0.8;
+	_cloud11_x -= 3;
 		if (_cloud11_x <= -width())
 			_cloud11_x = 1900;
-	_cloud2_x -= 0.5;
+	_cloud2_x -= 3;
 		if (_cloud2_x <= 0)
 			_cloud2_x = 1900;
-	_road_x -= 1.5;
-		if (_road_x <= -width())
-			_road_x = 1900;
-	_road1_x -= 1.5;
-		if (_road1_x <= -width())
-			_road1_x = 1900;
-	_lug_x -= 1.5;
-		if (_lug_x <= -width())
-			_lug_x = 1900;
-	_lug1_x -= 1.5;
-		if (_lug1_x <= -width())
-			_lug1_x = 1900;
-	_stolbiki_rect11_x -= 3;
-		if (_stolbiki_rect11_x <= 0)
-			_stolbiki_rect11_x = 1700;
-	_stolbiki_rect12_x -= 3;
-		if (_stolbiki_rect12_x <= 0)
-			_stolbiki_rect12_x = 1700;
-	_stolbiki_rect13_x -= 3;
-		if (_stolbiki_rect13_x <= 0)
-			_stolbiki_rect13_x = 1700;
-	_stolbiki_rect14_x -= 3;
-		if (_stolbiki_rect14_x <= 0)
-			_stolbiki_rect14_x = 1700;
-	_stolbiki_rect15_x -= 3;
-		if (_stolbiki_rect15_x <= 0)
-			_stolbiki_rect15_x = 1700;
-		_stolbiki_rect21_x -= 3;
-			if (_stolbiki_rect21_x <= 0)
-				_stolbiki_rect21_x = 1700;
-		_stolbiki_rect22_x -= 3;
-			if (_stolbiki_rect22_x <= 0)
-				_stolbiki_rect22_x = 1700;
-		_stolbiki_rect23_x -= 3;
-			if (_stolbiki_rect23_x <= 0)
-				_stolbiki_rect23_x = 1700;
-		_stolbiki_rect24_x -= 3;
-			if (_stolbiki_rect24_x <= 0)
-				_stolbiki_rect24_x = 1700;
-		_stolbiki_rect25_x -= 3;
-			if (_stolbiki_rect25_x <= 0)
-				_stolbiki_rect25_x = 1700;
-	_drevo_x -= 2;
+
+	_drevo_x -= 3;
 		if (_drevo_x <= -width())
 			_drevo_x = 2000;
-	_kust_x -= 2;
+
+	_stolbiki_rect11_x -= 4;
+		if (_stolbiki_rect11_x <= 0)
+			_stolbiki_rect11_x = 1700;
+	_stolbiki_rect12_x -= 4;
+		if (_stolbiki_rect12_x <= 0)
+			_stolbiki_rect12_x = 1700;
+	_stolbiki_rect13_x -= 4;
+		if (_stolbiki_rect13_x <= 0)
+			_stolbiki_rect13_x = 1700;
+	_stolbiki_rect14_x -= 4;
+		if (_stolbiki_rect14_x <= 0)
+			_stolbiki_rect14_x = 1700;
+	_stolbiki_rect15_x -= 4;
+		if (_stolbiki_rect15_x <= 0)
+			_stolbiki_rect15_x = 1700;
+
+	_car_x += 1;
+		if (_car_x >= width())
+			_car_x = -256;
+	_road_x -= 5;
+		if (_road_x <= -width())
+			_road_x = 1900;
+	_road1_x -= 5;
+		if (_road1_x <= -width())
+			_road1_x = 1900;
+
+	_stolbiki_rect21_x -= 6;
+		if (_stolbiki_rect21_x <= 0)
+			_stolbiki_rect21_x = 1700;
+	_stolbiki_rect22_x -= 6;
+		if (_stolbiki_rect22_x <= 0)
+			_stolbiki_rect22_x = 1700;
+	_stolbiki_rect23_x -= 6;
+		if (_stolbiki_rect23_x <= 0)
+			_stolbiki_rect23_x = 1700;
+	_stolbiki_rect24_x -= 6;
+		if (_stolbiki_rect24_x <= 0)
+			_stolbiki_rect24_x = 1700;
+	_stolbiki_rect25_x -= 6;
+		if (_stolbiki_rect25_x <= 0)
+			_stolbiki_rect25_x = 1700;
+
+	_kust_x -= 7;
 		if (_kust_x <= -width())
 			_kust_x = 2000;
-	_flower_x -= 2;
+	_flower_x -= 7;
 		if (_flower_x <= -width())
 			_flower_x = 2000;
-	_znak_x -= 2;
+	_znak_x -= 7;
 		if (_znak_x <= -width())
 			_znak_x = 2000;
 
-
-
+	_lug_x -= 3;
+		if (_lug_x <= -width())
+			_lug_x = 1900;
+	_lug1_x -= 3;
+		if (_lug1_x <= -width())
+			_lug1_x = 1900;
 }
+
 
 void ExampleWindow::handle_keys(const Uint8 *keys)
 {
@@ -315,14 +320,25 @@ void ExampleWindow::handle_keys(const Uint8 *keys)
 	//if (keys[SDL_SCANCODE_UP])
 	//	_bee_y -= 6;
 
-	if (keys[SDL_SCANCODE_DOWN])
+	if (keys[SDL_SCANCODE_DOWN]){
+		if((_bee_main_y + 6 + 200) < height())
 		_bee_main_y += 6;
-	if (keys[SDL_SCANCODE_UP])
+	}
+	if (keys[SDL_SCANCODE_UP]){
+		if((_bee_main_y - 6 - 100) > 0)
 		_bee_main_y -= 6;
-	if (keys[SDL_SCANCODE_LEFT])
+	}
+
+	if (keys[SDL_SCANCODE_LEFT]){
+		if((_bee_main_x - 6 - 200) > 0)
 		_bee_main_x -= 6;
-	if (keys[SDL_SCANCODE_RIGHT])
+	}
+
+	if (keys[SDL_SCANCODE_RIGHT]){
+		if((_bee_main_x + 6 + 300) < width())
 		_bee_main_x += 6;
+	}
+
 }
 
 

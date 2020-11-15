@@ -30,7 +30,7 @@ protected:
 	std::shared_ptr<SDL_Texture> _flower;
 	std::shared_ptr<SDL_Texture> _znak;
 	std::shared_ptr<SDL_Texture> _bee_main;
-	double _bee_x, _bee_y, _car_x, _car_y ,_sun_x, _sun_y,
+	int _bee_x, _bee_y, _car_x, _car_y ,_sun_x, _sun_y,
 	_mounts_x, _mounts_y, _mounts_x1, _mounts_y1,_cloud1_x,_cloud1_y,_cloud11_x,_cloud11_y,
 	_cloud2_x,_cloud2_y,_road_x,_road_y,_road1_x,_road1_y,
 	_lug_x,_lug_y,_lug1_x,_lug1_y,
